@@ -1,0 +1,48 @@
+@import './base.css';
+
+body {
+  background: #000;
+}
+
+#app {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+
+  font-weight: normal;
+
+  background: url('/background.jpg') no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.4s;
+  font-size: 22px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    place-items: center;
+  }
+
+  #app {
+    padding: 0 2rem;
+  }
+}
+
+#app .el-button--primary {
+  --el-button-bg-color: #755a57;
+  --el-button-hover-bg-color: #613210;
+  --el-button-border-color: #755a57;
+  --el-button-hover-border-color: #613210;
+  --el-button-active-bg-color: #613210;
+  --el-button-active-border-color: #613210;
+}
+
+#app .el-radio-button {
+  --el-radio-button-checked-bg-color: #755a57;
+  --el-radio-button-checked-border-color: #755a57;
+}
